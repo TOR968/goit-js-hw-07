@@ -1,22 +1,16 @@
-// const magicBtn = document.querySelector('.js-magic-btn');
+// const items = document.querySelectorAll('.item');
+// Array.prototype.forEach.call(items, element => {
+//   const title = element.querySelector('h2').innerHTML;
+//   const itemsLength = element.querySelectorAll('li').length;
+//   console.log(`Категория: ${title} / Количество элементов: ${itemsLength}`);
+// });
 
-/*
- * document.querySelector(selector) и document.querySelectorAll(selector)
- *   selector - любой валидный CSS-селектор
- *
- * Что возвращают?
- */
+// const ul = Array.from(document.querySelector('#categories').children);
+// for (let elem of ul) {
+//   let category = elem.firstElementChild.textContent;
+//   let quantityElem = elem.lastElementChild.children.length;
+//   console.log(`Категория: ${category} \nКоличество элементов: ${quantityElem}`);
+// }
 
-// const navEl = document.querySelector('.site-nav');
-// console.log('navEl', navEl);
-
-// const navLinksEl = document.querySelectorAll('.site-nav__link');
-// console.log('navLinksEl', navLinksEl);
-
-/*
- * Document.querySelector* и Element.querySelector*
- */
-const listEl = document.querySelectorAll('.item h2');
-console.log(listEl);
-// const headingList = listEl.querySelector('h2');
-// console.log(headingList);
+// const listEl = document.querySelectorAll('.item');
+// console.log(listEl);
