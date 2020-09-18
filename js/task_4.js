@@ -3,8 +3,8 @@ const increment = counterValue + 1;
 const decrement = counterValue - 1;
 
 const valueEl = document.querySelector('#value');
-const buttonIncrement = document.querySelector('data-action decrement');
-const buttonDecrement = document.querySelector('.decrement');
+const buttonIncrement = document.querySelector('[data - action = "increment"]');
+const buttonDecrement = document.querySelector('[data - action = "decrement"]');
 
 buttonIncrement.addEventListener('click', event => {
   console.log(event);
