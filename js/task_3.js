@@ -16,19 +16,24 @@ const images = [
   },
 ];
 
-// const makeImages = options.map(option => {
-// const option = images[0];
-const element = images.map(option => {
-  const imgEl = document.createElement('img');
-  imgEl.src = option.url;
-  imgEl.alt = option.alt;
-  imgEl.width = 640;
-  console.log(imgEl);
-  return imgEl;
-});
-const ulEl = document.querySelector('#gallery');
-// for()
-const liEl = document.createElement('li');
-// liEl.append(...element);
-ulEl.append(...element);
-// liEl.append(...element);
+for (let element of images) {
+  document
+    .querySelector('#gallery')
+    .insertAdjacentHTML(
+      'beforeend',
+      `<li><img src="${element.url}" alt="${element.alt}" width = 500></li>`,
+    );
+}
+
+// const element = images.map(option => {
+//   const imgEl = document.createElement('img');
+//   imgEl.src = option.url;
+//   imgEl.alt = option.alt;
+//   imgEl.width = 520;
+//   console.log(imgEl);
+//   return imgEl;
+// });
+
+// const ulEl = document
+//   .querySelector('#gallery')
+//   .insertAdjacentHTML('beforeend', `<li> ${element} </li>`);
