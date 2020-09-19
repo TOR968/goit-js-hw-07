@@ -1,12 +1,3 @@
-/*
- * Паттерн «Объект ссылок»
- *
- * События
- * - focus и blur
- * - input и change
- * - Чекбоксы и свойство checked
- */
-
 const refs = {
   input: document.querySelector('#name-input'),
   nameLabel: document.querySelector('#name-output'),
