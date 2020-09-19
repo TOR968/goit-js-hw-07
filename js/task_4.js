@@ -1,14 +1,21 @@
-const counterValue = 0;
-const increment = counterValue + 1;
-const decrement = counterValue - 1;
+let counterValue = 0;
+
+function increment() {
+  return (counterValue += 1);
+}
+function decrement() {
+  return (counterValue -= 1);
+}
 
 const valueEl = document.querySelector('#value');
-const buttonIncrement = document.querySelector('[data - action = "increment"]');
-const buttonDecrement = document.querySelector('[data - action = "decrement"]');
+const buttonIncrement = document.querySelector('[data-action="increment"]');
+const buttonDecrement = document.querySelector('[data-action="decrement"]');
 
-buttonIncrement.addEventListener('click', event => {
-  console.log(event);
+buttonIncrement.addEventListener('click', () => {
+  console.log('клик+');
+  valueEl.textContent = increment();
 });
-buttonDecrement.addEventListener('click', event => {
-  console.log(event);
+buttonDecrement.addEventListener('click', () => {
+  console.log('клик-');
+  valueEl.textContent = decrement();
 });
