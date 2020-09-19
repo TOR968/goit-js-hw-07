@@ -1,6 +1,6 @@
 const refs = {
   input: document.querySelector('#validation-input'),
-  textLength: document.getAttribute('data-length'),
+  textLength: document.querySelector('data-length'),
 };
 
 refs.input.addEventListener('blur', onInputBlur);
