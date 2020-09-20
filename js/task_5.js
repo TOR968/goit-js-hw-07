@@ -6,13 +6,7 @@ const refs = {
 refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-  refs.nameLabel.textContent = event.currentTarget.value;
+  refs.input.value
+    ? (refs.nameLabel.textContent = event.currentTarget.value)
+    : (refs.nameLabel.textContent = 'незнакомец');
 }
-
-// if (event.currentTarget.value.length === 0) {
-//     refs.nameLabel.textContent = 'незнакомец';
-// }
-
-// if (event.currentTarget.value === '') {
-//     refs.nameLabel.textContent = 'незнакомец';
-// }
